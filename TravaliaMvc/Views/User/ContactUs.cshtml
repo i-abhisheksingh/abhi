@@ -1,0 +1,186 @@
+﻿
+@{
+    Layout = null;
+}
+
+<html lang="en">
+<head>
+    <title>Travalia</title>
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <link href="/UserLayout/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="/UserLayout/css/style.css" type="text/css" media="all" />
+    <link href="/UserLayout/css/font-awesome.css" rel="stylesheet">
+    <script src="/UserLayout/js/jquery-1.11.1.min.js"></script>
+    <script src="/UserLayout/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="/UserLayout/css/main.css">
+    <script type="text/javascript" src="/UserLayout/js/main.js"></script>
+</head>
+<body>
+    <div class="banner">
+        <!-- menu -->
+        <div id="toggle_m_nav">
+            <div id="m_nav_menu" class="m_nav">
+                <div class="m_nav_ham" id="m_ham_1"></div>
+                <div class="m_nav_ham" id="m_ham_2"></div>
+                <div class="m_nav_ham" id="m_ham_3"></div>
+            </div>
+        </div>
+
+        <div id="m_nav_container" class="m_nav">
+            <ul id="m_nav_list" class="m_nav">
+                <li> <a href="/User/HomePage">Home</a> </li>
+                <li> <a href="#">AboutUs</a> </li>
+                <li> <a href="/User/PackageList">PackageList</a> </li>
+                <li class="active"> <a href="/User/ContactUs">ContactUs</a> </li>
+                <li> <a href="/User/SignUp">SignUp</a> </li>
+                <li> <a href="/User/SignIn">SignIn</a> </li>
+            </ul>
+        </div>
+        <!-- menu -->
+        <div class="container">
+            <div class="agile-left">
+                <p><i class="fa fa-map-marker" aria-hidden="true"></i></p>
+            </div>
+            <!-- wthree-top-grid -->
+            <div class="wthree-top-grid">
+                <h1><a href="index.html">Travalia</a></h1>
+                <div class="w3-agileits-border"> </div>
+                <h2>ContactUs</h2>
+            </div>
+            <!-- //wthree-top-grid -->
+        </div>
+    </div>
+    <!-- //banner -->
+    <!-- contact -->
+    <div class="contact">
+        <div class="container">
+            <div class="w3layouts-contact-grids">
+                <div class="col-sm-3 w3layouts-contact-grid">
+                    <i class="fa fa-map" aria-hidden="true"></i>
+                    <h5>Address</h5>
+                    <p>A/9 Gayatri Nagar,Indra Nagar 225001,Lucknow.</p>
+                </div>
+                <div class="col-sm-3 w3layouts-contact-grid">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <h5>ContactNo</h5>
+                    <p>(+91)8382938673</p>
+                    <p>(+91)8299518697</p>
+                </div>
+                <div class="col-sm-3 w3layouts-contact-grid">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <h5>Email</h5>
+                    <p><a href="as675108@gmail.com">as675108@gmail.com</a></p>
+                    <p><a href="abeeabhisheksingh@outlook.com">abeeabhisheksingh@outlook.com</a></p>
+                </div>
+                <div class="col-sm-3 w3layouts-contact-grid">
+                    <i class="fa fa-share-alt" aria-hidden="true"></i>
+                    <h5>Social</h5>
+                    <p>Touch With Us</p>
+                    <div class="agile-social-grids">
+                        <ul>
+                            <li><a href="abeeabhisheksingh"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                            <li><a href="abeeabhisheksingh"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+            <!-- map -->
+            @*<div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.7843856753375!2d80.94247381451918!3d26.846809369388286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd07c3c15643%3A0x867bb0de72c4c460!2sDigipodium!5e0!3m2!1sen!2sin!4v1539766027341" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>*@
+            <!-- map -->
+            <div class="contact-form">
+                <form action="/User/ContactUs" method="post">
+                    <input type="text" name="Name" placeholder="Name" required="">
+                    <input type="email" name="Email" placeholder="Email" required="">
+                    <input type="text" name="Subject" placeholder="Subject" required="">
+                    <textarea name="Message" placeholder="Message" required=""></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- //contact -->
+    <!-- footer -->
+    <div class="w3-agile-footer">
+        <div class="container">
+            <div class="footer-grids">
+                <div class="col-md-3 footer-grid">
+                    <div class="footer-grid-heading">
+                        <h4>Address</h4>
+                    </div>
+                    <div class="footer-grid-info">
+                        <p>
+                            Lucknow
+                            <span>A/23 Gayatri Nagar ,225001.</span>
+                        </p>
+                        <p class="phone">
+                            ContactNo : (+91)8382938673
+                            <span>Email : <a href="as675108@gmail.com">as675108@gmail.com</a></span>
+                        </p>
+
+                    </div>
+                </div>
+                <div class="col-md-3 footer-grid">
+                    <div class="footer-grid-heading">
+                        <h4>Navigation</h4>
+                    </div>
+                    <div class="footer-grid-info">
+                        <ul>
+                            <li> <a href="/User/HomePage">Home</a> </li>
+                            <li> <a href="#">AboutUs</a> </li>
+                            <li> <a href="/User/PackageList">PackageList</a> </li>
+                            <li> <a href="/User/ContactUs">ContactUs</a> </li>
+                            <li> <a href="/User/SignUp">SignUp</a> </li>
+                            <li> <a href="/User/SignIn">SignIn</a> </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col-md-3 footer-grid">
+                    <div class="footer-grid-heading">
+                        <h4>Latest Posts</h4>
+                    </div>
+                    <div class="w3agile_footer_grid_list">
+                        <ul>
+                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> Vestibulum ante ipsum</li>
+                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> Phasellus at eros</li>
+                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> Mauris eleifend aliquet</li>
+                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> Aliquam vitae tristique</li>
+                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> Pellentesque lobortis</li>
+                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> Class aptent taciti</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 footer-grid">
+                    <div class="footer-grid-heading">
+                        <h4>Twitter Posts</h4>
+                    </div>
+                    <div class="w3agile_footer_grid_list w3agile-post">
+                        <ul>
+                            <li>
+                                Ut aut reiciendis voluptatibus <a href="#">http://example.com</a> alias, ut aut.
+                                <span><i class="fa fa-twitter" aria-hidden="true"></i> 02 days ago</span>
+                            </li>
+                            <li>
+                                Itaque earum rerum hic tenetur a sapiente <a href="#">http://example.com</a> ut aut.
+                                <span><i class="fa fa-twitter" aria-hidden="true"></i> 03 days ago</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+            <div class="agileits-w3layouts-copyright">
+                <p>© 2018 Travalia . All Rights Reserved | Design by Abhishek Singh </p>
+            </div>
+        </div>
+    </div>
+    <!-- //footer -->
+    <script src="/UserLayout/js/SmoothScroll.min.js"></script>
+</body>
+</html>
+

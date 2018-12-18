@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewBag.Title = "SendNotification";
+    Layout = "~/Views/Shared/_AdminMaster.cshtml";
+}
+
+
+<div class="breadcrumbs">
+    <div class="col-sm-4">
+        <div class="page-header float-left">
+            <div class="page-title">
+                <h1>Admin Dashboard</h1>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-8">
+        <div class="page-header float-right">
+            <div class="page-title">
+                <ol class="breadcrumb text-right">
+                    <li class="active">Admin</li>
+                    <li class="active">SendNotification</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+<br />
+<br />
+
+<div class="card border-danger">
+    <div class="card-header bg-danger">
+        <h3 class="text-white"><i class="fa fa-bullhorn"></i> &nbsp; Send New Notification</h3>
+    </div>
+    <form action="/Admin/SendNotification" method="post">
+        <div class="card-body">
+            <div class="form-group">
+                <label>Choose User Name</label>
+                   @Html.DropDownList("ddlEmail",ViewBag.ddl as SelectList,"---Select User Name---",new { @class="form-control"})
+            </div>
+            <div class="form-group">
+                <label>Subject</label>
+                <input id="Text1" name="Sub" type="text" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label>Message</label>
+                <textarea id="TextArea1" name="Msg" rows="5" cols="20" class="form-control"></textarea>
+            </div>
+
+            <input id="Submit1" type="submit" value="Add Package" class="btn btn-outline-danger" />
+        </div>
+    </form>
+</div>
+
+
+

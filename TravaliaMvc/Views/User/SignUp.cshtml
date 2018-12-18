@@ -1,0 +1,182 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Travalia</title>
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <link href="/UserLayout/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="/UserLayout/css/style.css" type="text/css" media="all" />
+    <link href="/UserLayout/css/font-awesome.css" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Rokkitt:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <script src="/UserLayout/js/jquery-1.11.1.min.js"></script>
+    <script src="/UserLayout/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="/UserLayout/css/main.css">
+    <script type="text/javascript" src="/UserLayout/js/main.js"></script>
+</head>
+<body>
+    <div class="banner">
+        <div id="toggle_m_nav">
+            <div id="m_nav_menu" class="m_nav">
+                <div class="m_nav_ham" id="m_ham_1"></div>
+                <div class="m_nav_ham" id="m_ham_2"></div>
+                <div class="m_nav_ham" id="m_ham_3"></div>
+            </div>
+        </div>
+
+        <div id="m_nav_container" class="m_nav">
+            <ul id="m_nav_list" class="m_nav">
+                <li> <a href="/User/HomePage">Home</a> </li>
+                <li> <a href="#">AboutUs</a> </li>
+                <li> <a href="/User/PackageList">PackageList</a> </li>
+                <li> <a href="/User/ContactUs">ContactUs</a> </li>
+                <li class="active"> <a href="/User/SignUp">SignUp</a> </li>
+                <li> <a href="/User/SignIn">SignIn</a> </li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="agile-left">
+                <p><i class="fa fa-map-marker" aria-hidden="true"></i> 123 T.Globel Place,London</p>
+            </div>
+            <div class="wthree-top-grid">
+                <h1><a href="/User/HomePage">Travalia</a></h1>
+                <div class="w3-agileits-border"> </div>
+                <h2>SignUp Here</h2>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="container" style="border-style:solid;border-color:#ff9800">
+        <div class="row">
+            <div class="container">
+                <br />
+                <div class="row">
+                    <div class="col-xs-6" style="text-align:center;font-size:x-large;">
+                        <a href="SignIn">SignIn</a>
+                    </div>
+                    <div class="col-xs-6" style="text-align:center;font-size:x-large;">
+                        <a href="SignUp" style="color:#ff9800">SignUp</a>
+                    </div>
+                </div>
+                <br />
+                <form action="/User/SignUp" method="post">
+                    <div class="form-group">
+                        @*<label>UserName</label>*@
+                        <input id="Text1" name="UName" style="text-align:center;font-size:large;" placeholder="User Name" type="text" class="form-control fa-font-awesome fa fa-user" />
+                    </div>
+                    <br/>
+                    <div class="form-group">
+                        @*<label>Email</label>*@
+                        <input id="Text2" name="email" style="text-align:center;font-size:large;" placeholder="Email" type="email" class="form-control fa fa-key" />
+                    </div>
+                    <br />
+                    <div class="form-group">
+                        @*<label>Password</label>*@
+                        <input id="Text3" name="password" style="text-align:center;font-size:large;" placeholder="Password" type="password" class="form-control" />
+                    </div>
+                    <br />
+                    
+                    <div class="form-group">
+                        @*<label>Confirm Password</label>*@
+                        <input id="Text3" name="confpass" style="text-align:center;font-size:large;" placeholder="Confirm Password" type="password" class="form-control" />
+                    </div>
+                    <br />
+
+                    <div class="form-group" style="text-align:center;">
+                        <input type="checkbox" id="brand1" name="checkbox" value="">
+                        <label for="brand1">
+                            I Accept to the Terms & Conditions
+                        </label>
+                    </div>
+                    <div style="text-align:center;">
+                        <input id="Submit1" type="submit" value="SignUp" class="btn btn-outline-danger" style="width:250px;background-color:#0026ff;height:50px;font-size:20px;color:white;" />
+                    </div>
+                </form>
+                <br />
+            </div>
+        </div>
+    </div>
+    <br />
+    <!-- footer -->
+    <div class="w3-agile-footer">
+        <div class="container">
+            <div class="footer-grids">
+                <div class="col-md-3 footer-grid">
+                    <div class="footer-grid-heading">
+                        <h4>Address</h4>
+                    </div>
+                    <div class="footer-grid-info">
+                        <p>
+                            Lucknow
+                            <span>A/23 Gayatri Nagar ,225001.</span>
+                        </p>
+                        <p class="phone">
+                            ContactNo : (+91)8382938673
+                            <span>Email : <a href="as675108@gmail.com">as675108@gmail.com</a></span>
+                        </p>
+
+                    </div>
+                </div>
+                <div class="col-md-3 footer-grid">
+                    <div class="footer-grid-heading">
+                        <h4>Navigation</h4>
+                    </div>
+                    <div class="footer-grid-info">
+                        <ul>
+                            <li> <a href="/User/HomePage">Home</a> </li>
+                            <li> <a href="#">AboutUs</a> </li>
+                            <li> <a href="/User/PackageList">PackageList</a> </li>
+                            <li> <a href="/User/ContactUs">ContactUs</a> </li>
+                            <li> <a href="/User/SignUp">SignUp</a> </li>
+                            <li> <a href="/User/SignIn">SignIn</a> </li> </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 footer-grid">
+                    <div class="footer-grid-heading">
+                        <h4>Latest Posts</h4>
+                    </div>
+                    <div class="w3agile_footer_grid_list">
+                        <ul>
+                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> Vestibulum ante ipsum</li>
+                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> Phasellus at eros</li>
+                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> Mauris eleifend aliquet</li>
+                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> Aliquam vitae tristique</li>
+                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> Pellentesque lobortis</li>
+                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> Class aptent taciti</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 footer-grid">
+                    <div class="footer-grid-heading">
+                        <h4>Twitter Posts</h4>
+                    </div>
+                    <div class="w3agile_footer_grid_list w3agile-post">
+                        <ul>
+                            <li>
+                                Ut aut reiciendis voluptatibus <a href="#">http://example.com</a> alias, ut aut.
+                                <span><i class="fa fa-twitter" aria-hidden="true"></i> 02 days ago</span>
+                            </li>
+                            <li>
+                                Itaque earum rerum hic tenetur a sapiente <a href="#">http://example.com</a> ut aut.
+                                <span><i class="fa fa-twitter" aria-hidden="true"></i> 03 days ago</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+            <div class="agileits-w3layouts-copyright">
+                <p>© 2018 Travalia . All Rights Reserved | Design by Abhishek Singh</p>
+            </div>
+        </div>
+    </div>
+    <!-- //footer -->
+    <script src="/UserLayout/js/SmoothScroll.min.js"></script>
+</body>
+</html>
+

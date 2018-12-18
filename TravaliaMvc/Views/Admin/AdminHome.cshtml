@@ -1,0 +1,81 @@
+﻿
+@{
+    ViewBag.Title = "AdminHome";
+    Layout = "~/Views/Shared/_AdminMaster.cshtml";
+}
+
+<div class="breadcrumbs">
+    <div class="col-sm-4">
+        <div class="page-header float-left">
+            <div class="page-title">
+                <h1>Admin Dashboard</h1>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-8">
+        <div class="page-header float-right">
+            <div class="page-title">
+                <ol class="breadcrumb text-right">
+                    <li class="active">Admin</li>
+                    <li class="active">Home Page</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br/>
+<br/>
+<br/>
+
+<div class="col-sm-6 col-lg-3">
+    <div class="card text-white bg-flat-color-4">
+        <div class="card-body pb-0">
+            <i class="fa fa-users fa-3x"></i>
+            <h4 class="mb-0">
+                <span class="count">
+                    @ViewBag.totalPack
+                </span>
+            </h4>
+            <p class="text-light">Show Data</p>
+        </div>
+    </div>
+</div>
+
+<div class="col-sm-6 col-lg-3">
+    <div class="card text-white bg-flat-color-4">
+        <div class="card-body pb-0">
+            <i class="fa fa-list fa-3x"></i>
+            <h4 class="mb-0">
+                <span class="count">10468</span>
+            </h4>
+            <p class="text-light">New Order</p>
+        </div>
+    </div>
+</div>
+<div class="col-sm-6 col-lg-3">
+    <div class="card text-white bg-flat-color-4">
+        <div class="card-body pb-0">
+            <i class="fa fa-comments fa-3x"></i>
+            <h4 class="mb-0">
+                <span class="count">10468</span>
+            </h4>
+            <p class="text-light">New Feedback</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="col-sm-6 col-lg-3">
+    <div class="card text-white bg-flat-color-4">
+        <div class="card-body pb-0">
+            <i class="fa fa-bell fa-3x"></i>
+            <h4 class="mb-0">
+                <span class="count">10468</span>
+            </h4>
+            <p class="text-light">Notification</p>
+        </div>
+    </div>
+</div>
+
+@Html.Partial("_ReviewPartial");
